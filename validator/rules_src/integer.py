@@ -43,7 +43,7 @@ class Integer(Rule):
 
     @staticmethod
     def convert(val):
-        convert_funcs = [Decimal.convert, Binary.convert, Octal.convert, Hex.convert]
+        convert_funcs = [Decimal.convert, Binary.convert, Octal.convert]
         for func in convert_funcs:
             try:
                 return func(val)
